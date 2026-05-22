@@ -1,142 +1,143 @@
-tubuh{
-    warna latar belakang:berwarna merah muda;
-    keluarga font:tanpa serif;
-    batas: 0;
-    lapisan: 0;
+body{
+    background-color:pink;
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
 }
 
-tubuh{
-    warna latar belakang:berwarna merah muda;
-    keluarga font:tanpa serif;
-    batas: 0;
-    lapisan: 0;
+body{
+    background-color:pink;
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
 }
 
-.judul{
-    lebar: 90%;
-    batas: 20pxmobil10pxmobil;
-    tinggi: 120px;
-    tinggi baris: 120px;
-    latar belakang: #417aa8;
-    warna:putih;
+.title{
+    width:90%;
+    margin:20px auto;
+    height:120px;
+    line-height:120px;
+    background:#417aa8;
+    color:white;
 }
 
-.jarak{
-    lapisan: 0 30px;
+.space{
+    padding:0 30px;
 }
 
 .menu{
-    warna latar belakang: #417aa8;
-    lebar: 90%;
-    batas: 10pxmobil0mobil;
-    tinggi: 50px;
-    radius perbatasan: 8px 8px 0 0;
+    background-color:#417aa8;
+    width:90%;
+    margin:10px auto;
+    height:50px;
+    border-radius:8px 8px 0 0;
 }
 
 .menu ul{
-    gaya daftar:tidak ada;
-    batas: 0;
-    lapisan: 0;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
 
 .menu ul li{
-    mengambang:kiri;
+    float:left;
 }
 
-.menu ul li A{
-    menampilkan:memblokir;
-    lapisan: 0 20px;
-    tinggi baris: 50px;
-    warna:putih;
-    dekorasi teks:tidak ada;
+.menu ul li a{
+    display:block;
+    padding:0 20px;
+    line-height:50px;
+    color:white;
+    text-decoration:none;
 }
 
-.menu ul li A:arahkan kursor{
-    warna latar belakang: #4b88bb;
-}
-    .menu::setelah{
-    isi: "";
-    menampilkan: meja;
-    jernih: keduanya;
+.menu ul li a:hover{
+    background-color:#4b88bb;
 }
 
-.wadah{
-    lebar: 90%;
-    batas: 20px mobil;
-    menampilkan: melenturkan;
-    celah: 20px;
+.menu::after{
+    content:"";
+    display:table;
+    clear:both;
 }
 
-.konten-kiri{
-    melenturkan: 7;
+.container{
+    width:90%;
+    margin:20px auto;
+    display:flex;
+    gap:20px;
 }
 
-.bilah sisi{
-    melenturkan: 3;
-    warna latar belakang: putih;
-    lapisan: 20px;
-    berbatasan: 1px padat #ccc;
-    tinggi: konten yang sesuai;
+.left-content{
+    flex:7;
 }
 
-.kotak{
-    warna latar belakang: putih;
-    berbatasan: 1px padat #417aa8;
-    lapisan: 20px;
-    margin-bawah: 20px;
+.sidebar{
+    flex:3;
+    background-color:white;
+    padding:20px;
+    border:1px solid #ccc;
+    height:fit-content;
 }
 
-.kotak h3{
-    margin-atas: 0;
-    warna: #417aa8;
+.box{
+    background-color:white;
+    border:1px solid #417aa8;
+    padding:20px;
+    margin-bottom:20px;
 }
 
-.bilah sisi daftar{
-    gaya daftar: tidak ada;
-    lapisan: 0;
+.box h3{
+    margin-top:0;
+    color:#417aa8;
 }
 
-.bilah sisi daftar li{
-    lapisan: 8px 0;
-    batas bawah: 1px padat #eee;
+.sidebar ul{
+    list-style:none;
+    padding:0;
 }
 
-.bilah sisi daftar li A{
-    dekorasi teks: tidak ada;
-    warna: #417aa8;
-    ketebalan huruf: berani;
+.sidebar ul li{
+    padding:8px 0;
+    border-bottom:1px solid #eee;
 }
 
-.kaki{
-    perataan teks: tengah;
-    lapisan: 20px;
-    warna: #333;
+.sidebar ul li a{
+    text-decoration:none;
+    color:#417aa8;
+    font-weight:bold;
 }
 
-.kotak kaki{
-    warna latar belakang: #417aa8;
-    warna: putih;
-    lapisan: 15px;
-    perbatasan: 1px padat #ccc;
-    radius perbatasan: 5px;
-    perataan teks: kiri;
-    lebar: 90%;
-    batas: 20px mobil;
-    ukuran kotak: kotak perbatasan;
+.footer{
+    text-align:center;
+    padding:20px;
+    color:#333;
 }
 
-.pembungkus-kuning{
-    warna latar belakang: #fff9c4;
-    lebar: 90%;
-    batas: 0 mobil 20px mobil;
-    lapisan: 20px 0;
-    radius perbatasan: 0 0 8px 8px;
-    berbatasan: 1px padat #e6e600;
+.footer-box{
+    background-color:#417aa8;
+    color:white;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    text-align:left;
+    width:90%;
+    margin:20px auto;
+    box-sizing:border-box;
 }
 
-.pembungkus-kuning.wadah{
-    lebar: 95%;
-    batas: 0 mobil;
-    menampilkan: melenturkan;
-    celah: 20px;
+.yellow-wrapper{
+    background-color:#fff9c4;
+    width:90%;
+    margin:0 auto 20px auto;
+    padding:20px 0;
+    border-radius:0 0 8px 8px;
+    border:1px solid #e6e600;
+}
+
+.yellow-wrapper.container{
+    width:95%;
+    margin:0 auto;
+    display:flex;
+    gap:20px;
 }
