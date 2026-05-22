@@ -1,20 +1,56 @@
 body{
-background:#f3f3f3;
-color:#333;
-width:100%;
-front-family:sans-serif;
-margin:0 auto;
+    background-color:pink;
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
 }
 
-.header{
-width:90%;
-margin:auto;
-height:120px;
-line-height:120px;
-background:#417aa8;
-color:#fff;
+body{
+    background-color:pink;
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.judul{
+    width:90%;
+    margin:20px auto;
+    height:120px;
+    line-height:120px;
+    background:#417aa8;
+    color:white;
 }
 
 .jarak{
-padding:0 2pc;
+    padding:0 30px;
+}
 
+.menu{
+    background:#417aa8;
+    width:90%;
+    margin:10px auto;
+    height:50px;
+    border-radius:8px 8px 0 0;
+}
+
+.menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.menu ul li{
+    float:left;
+}
+
+.menu ul li a{
+    display:block;
+    padding:0 20px;
+    line-height:50px;
+    color:white;
+    text-decoration:none;
+}
+
+.menu ul li a:hover{
+    background:#4b88bb;
+}
